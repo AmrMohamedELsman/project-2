@@ -1,0 +1,325 @@
+
+
+:root{
+    --blue-color: #0078ff;
+    --grae-color: #dddd;
+    --box-shado: 0px 0px 10px 3px rgb(175, 171, 171);
+}
+/* start combonans */
+.speceale-heading{
+    text-align: center;
+    padding: 3rem 0;
+}
+.speceale-heading h2{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.speceale-heading p{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.speceale-heading p::after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* end combonans */
+
+
+/* start header */
+.navbar{
+    box-shadow: 0px 0px 2px 2px rgb(175, 171, 171);
+}
+.navbar .container .navbar-brand{
+    color: var(--blue-color);
+}
+.navbar .container .collapse .navbar-nav .nav-item a{
+    color: var(--blue-color);
+    transition: 5s;
+}
+.navbar .container .collapse .navbar-nav .nav-item{
+    position: relative;
+}
+.navbar .container .collapse .navbar-nav .nav-item a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--blue-color);
+    transition: 0.5s;
+}
+.navbar .container .collapse .navbar-nav .nav-item:hover  a::after{
+    width: 70%;
+}
+
+.home{
+    background-image: url(../imge/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.home p::after{
+    content: "a";
+    animation-name: moveing-liter;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes moveing-liter {
+    2%{content: "f |";}
+    4%{content: "fr |";}
+    6%{content: "fro |";}
+    8%{content: "fron |";}
+    10%{content: "front |";}
+    12%{content: "fronte |";}
+    14%{content: "fronten |";}
+    16%{content: "frontend |";}
+    18%{content: "frontend d |";}
+    20%{content: "frontend de |";}
+    22%{content: "frontend dev |";}
+    24%{content: "frontend deve |";}
+    26%{content: "frontend devel |";}
+    28%{content: "frontend develo |";}
+    30%{content: "frontend develop |";}
+    32%{content: "frontend develope |";}
+    34%{content: "frontend developer |";}
+    36%{content: "frontend develope |";}
+    38%{content: "frontend develop |";}
+    40%{content: "frontend develo |";}
+    42%{content: "frontend devel |";}
+    44%{content: "frontend dev |";}
+    46%{content: "frontend de |";}
+    48%{content: "frontend d |";}
+    50%{content: "frontend  |";}
+    52%{content: "fronten  |";}
+    54%{content: "fronte  |";}
+    56%{content: "front  |";}
+    58%{content: "fron  |";}
+    60%{content: "fro | ";}
+    62%{content: "fr  |";}
+    64%{content: "f | ";}
+    66%{content: "ce  |";}
+    68%{content: "ceo |";}
+    70%{content: "ceo d  |";}
+    72%{content: "ceo de  |";}
+    74%{content: "ceo dev  |";}
+    76%{content: "ceo devf  |";}
+    78%{content: "ceo devfo | ";}
+    80%{content: "ceo defol |";}
+    82%{content: "ceo defoli |";}
+    84%{content: "ceo defolio |";}
+    86%{content: "ceo defoli |";}
+    88%{content: "ceo defol |";}
+    90%{content: "ceo defo |";}
+    92%{content: "ceo def |";}
+    94%{content: "ceo de |";}
+    96%{content: "ceo d |";}
+    98%{content: "ceo |";}
+    99%{content: "ce |";}
+    100%{content: "c |";}
+}
+/* end header */
+/* start about */
+.about{
+    background-color: var(--grae-color);
+}
+.about .container{
+    box-shadow: 0px 0px 10px 3px rgb(175, 171, 171);
+}
+.about .about-info h2::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about .about-sec .progress{
+    height: 12px;
+    background-color: #0077ff5b;
+}
+.about .about-sec .progress .progress-bar {
+    width: 85%;
+}
+
+/* end about */
+/* start services */
+#services{
+    background-color: var(--grae-color);
+}
+.serv-card .col-lg-4 .serv-icon{
+    margin: 2rem auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.serv-card .col-lg-4 .serv-icon i{
+    font-size: 4rem;
+}
+.serv-card .col-lg-4:hover .serv-icon i{
+    color: white;
+}
+.serv-card .col-lg-4:hover .serv-icon{
+    background-color: var(--blue-color);
+    border: 10px solid #77a8e0;
+}
+.serv-card .col-lg-4 .bg-white{
+    box-shadow: var(--box-shado);
+    border-radius: 10px;
+}
+
+#services .serv-experins{
+    background-image: url(../imge/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+#services .serv-experins .lear{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff;
+    opacity: 0.6;
+}
+@media screen and (max-width: 767px){
+    #services .serv-experins{
+        height: 1270px;
+    }
+}
+#services .serv-experins .container .col-md-3 .exper-icon{
+    margin: 2rem auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #cde1f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services .serv-experins .container .col-md-3 .exper-icon i{
+    font-size: 2rem;
+    color: #cde1f8;
+}
+/* end services */
+/* start portfolio */
+#PORTFOLIO{
+    background-color: var(--grae-color);
+}
+#PORTFOLIO .container .row .card{
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 1px grey;
+    margin-bottom: 2rem;
+}
+#PORTFOLIO .container .row .card img{
+    transition: 0.8s;
+}
+#PORTFOLIO .container .row .card .cat-imge{
+    overflow: hidden;
+}
+#PORTFOLIO .container .row .card:hover img{
+    transform: scale(1.3);
+}
+#PORTFOLIO .port-sliedr{
+    height: 100vh;
+    background-image: url(../imge/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#PORTFOLIO .port-sliedr .lear{
+    background-color: #4194f3;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* end portfolio */
+/* start blog */
+#BLOG{
+    background-color: var(--grae-color);
+}
+#BLOG .container .row .card-group .card{
+    box-shadow: 0px 2px 5px 1px grey;
+    margin-bottom: 2rem;
+}
+#BLOG .container .row .card-group .card-body .btn{
+    left: 50%;
+    transform: translate(-50%);
+    top: -10%;
+}
+#BLOG .container .row .card-group .card-body .card-title{
+    transition: 0.5s;
+}
+#BLOG .container .row .card-group .card-body .card-title:hover{
+    color: var(--blue-color);
+    cursor: pointer;
+}
+#BLOG .container .row .card-group .card-footer .col-7{
+    transition: 0.5s;
+}
+#BLOG .container .row .card-group .card-footer .col-7 .pt-2:hover{
+    color: var(--blue-color);
+    cursor: pointer;
+}
+/* end blog */
+/* start contact */
+#CONTACT .cont-imge{
+    height: 120vh;
+    background-image: url(../imge/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#CONTACT .cont-imge .lear{
+    background-color: #4194f3;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#CONTACT .cont-imge .container .row h2::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#CONTACT .cont-imge .container .row .cont-icon .me-2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--blue-color);
+    transition: 0.5s;
+}
+#CONTACT .cont-imge .container .row .cont-icon .me-2:hover{
+    background-color: var(--blue-color);
+    border: 3px solid  #77a8e0;
+    cursor: pointer;
+}
+#CONTACT .cont-imge .container .row .cont-icon .me-2:hover i{
+    color: white;
+}
+@media screen and (max-width: 991px){
+    #CONTACT .cont-imge{
+        height: 180vh;
+    }
+}
+/* end contact */
